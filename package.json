@@ -2,16 +2,11 @@
   "name": "mean-app",
   "version": "0.0.0",
   "engines": {
-  "node": "8.9.3"
+    "node": "8.9.3"
   },
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -50,8 +45,5 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  },
-  "scripts": {
-  "postinstall": "ng build --aot -prod"
-}
+  }
 }
