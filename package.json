@@ -48,5 +48,5 @@
   },
   "scripts": {
   "postinstall": "ng build --aot -prod"
-},
+}
 }
